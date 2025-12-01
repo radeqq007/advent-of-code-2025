@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Solutions for advent of code 2025",
   "main": "",
+  "type": "module",
   "scripts": {},
   "keywords": [
     "advent",
