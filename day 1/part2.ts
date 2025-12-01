@@ -38,5 +38,3 @@ for (const step of input) {
 }
 
 console.log('Password: ', password);
-
-
