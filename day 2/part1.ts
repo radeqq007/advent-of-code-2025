@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-const input: string[][] = readFileSync('input.txt', 'utf-8')
+const input: string[][] = readFileSync('day 2/input.txt', 'utf-8')
   .trim()
   .split(',')
   .map((range: string) => range.split('-'));
