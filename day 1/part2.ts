@@ -1,8 +1,8 @@
 // this solution sucks but idc if it works it works
 
-import { readFileSync } from 'fs';
+import { readInput } from '../utils/index.ts';
 
-const input: string[] = readFileSync('day 1/input.txt', 'utf-8')
+const input: string[] = readInput('day 1/input.txt')
   .trim()
   .split('\n');
 

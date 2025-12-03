@@ -1,6 +1,7 @@
-import { readFileSync } from 'fs';
+import { readInput, sum } from "../utils/index.ts";
 
-const input: string[][] = readFileSync('day 2/input.txt', 'utf-8')
+
+const input: string[][] = readInput('day 2/input.txt',)
   .trim()
   .split(',')
   .map((range: string) => range.split('-'));
@@ -32,6 +33,4 @@ for (const range of input) {
   }
 }
 
-const sum = invalidNumbers.reduce((sum, num) => (sum += num));
-
-console.log(sum);
+console.log(sum(invalidNumbers));
