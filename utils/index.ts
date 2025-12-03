@@ -5,4 +5,9 @@ const readInput = (filePath: string) => {
   return inp;
 }
 
-export default readInput;
+const sum = (nums: number[]): number => {
+  return nums.reduce((sum, num) => (sum += num));
+}
+
+export { readInput, sum };
+
