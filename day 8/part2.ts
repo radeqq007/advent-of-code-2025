@@ -1,7 +1,7 @@
 import { readInput } from '../utils/index.ts';
 
 const input: number[][] = readInput('day 8/input.txt')
-  .split('\r\n')
+  .split(/\r?\n/)
   .map((line: string) => line.split(','));
 
 interface JBox {

@@ -1,7 +1,7 @@
 import { readInput } from '../utils/index.ts';
 
 const input: boolean[][] = readInput('day 4/input.txt')
-  .split('\n')
+  .split(/\r?\n/)
   .map(line => line.split(''))
   .map(chars => chars.map(char => char === '@'));
 

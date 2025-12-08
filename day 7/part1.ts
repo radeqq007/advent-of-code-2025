@@ -1,7 +1,7 @@
 import { readInput } from '../utils/index.ts';
 
 const input: string[][] = readInput('day 7/input.txt')
-  .split('\n')
+  .split(/\r?\n/)
   .map((line: string) => line.split(''));
 
 const beamStartCol = input[0].indexOf('S');

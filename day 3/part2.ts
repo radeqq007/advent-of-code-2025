@@ -10,7 +10,7 @@ const maxInRangeIdx = (arr: number[], start: number, end: number): number => {
 };
 
 const input: number[][] = readInput('day 3/input.txt')
-  .split('\n')
+  .split(/\r?\n/)
   .map((bank: string) => bank.split('').map(ch => Number(ch)));
 
 const maxValues: number[] = [];

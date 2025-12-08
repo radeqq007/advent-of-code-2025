@@ -1,6 +1,6 @@
 import { readInput } from '../utils/index.ts';
 
-let ranges= readInput('day 5/input.txt').split('\n\n')[0].split('\n').map((range: string) => range.split('-')).map((nums: string[]) => nums.map((Number))).sort((a, b) => a[0] - b[0]);
+let ranges= readInput('day 5/input.txt').split('\n\n')[0].split(/\r?\n/).map((range: string) => range.split('-')).map((nums: string[]) => nums.map((Number))).sort((a, b) => a[0] - b[0]);
 
 const merged: number[][] = [];
 for (const [start, end] of ranges) {

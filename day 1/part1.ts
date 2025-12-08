@@ -2,7 +2,7 @@ import { readInput } from '../utils/index.ts';
 
 const input: string[] = readInput('day 1/input.txt')
   .trim()
-  .split('\n');
+  .split(/\r?\n/);
 
 const startingNumber: number = 50;
 const maxNumber: number = 99;

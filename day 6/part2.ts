@@ -1,7 +1,7 @@
 import { readInput } from '../utils/index.ts';
 
 const input = readInput('day 6/input.txt')
-  .split('\n')
+  .split(/\r?\n/)
   .map((line: string) => line.split(''));
 
 const operations: string[] = input.at(-1).filter((op: string) => op != ' ');
