@@ -10,7 +10,7 @@ const input: tile[] = readInput('day 9/input.txt')
   .map((line: string) => line.split(','))
   .map(([a, b]: string[]) => ({ x: Number(a), y: Number(b) } as tile));
 
-const sizes: { a: tile; b: tile; size: number }[] = [];
+let maxSize = 0;
 for (let i = 0; i < input.length; i++) {
   for (let j = i + 1; j < input.length; j++) {
     const width =
@@ -23,8 +23,10 @@ for (let i = 0; i < input.length; i++) {
         ? input[i].y - input[j].y
         : input[j].y - input[i].y) + 1;
 
-    sizes.push({ a: input[i], b: input[j], size: width * height });
+    const size = width * height;
+
+    if (size > maxSize) maxSize = size;
   }
 }
 
-console.log(sizes.sort((a, b) => b.size - a.size)[0].size);
+console.log(maxSize);
